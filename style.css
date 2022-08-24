@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color:red;
+    text-align: center;
+    font-size: 40px;
+}
+h2::before{
+    content: ' Age -';
+}
+h2::after{
+    content: '- Pore ';
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+
+}
+p::before{
+    content: '"';
+}
+
+p::after{
+    content: '"';
+}
+
+.button-div{
+    text-align: center;
+    margin-top: 40px;
+    
+    
+}
+.click-class{
+    font-size: 50px;
+    text-decoration: none;
+    background: #3498db;
+    display: inline-block;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.click-class::before{
+    content: '';
+    height: 100%;
+    width: 0;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    border-radius: 10px;
+    transition: .4s;
+    z-index: -1;
+
+}
+.click-class:hover::before{
+    width: 100%;
+    
+}
+ul{
+    list-style: none;
+    margin-left: 20px;
+}
+li{
+    font-size: 30px;
+}
+li:before{
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: red;
+    font-size: 26px;
+    display: inline-block;
+    margin-right: 10px;
+}
